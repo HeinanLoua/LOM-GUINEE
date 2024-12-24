@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOM GUINEE - Expert en Tampons</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function() {
+          emailjs.init("VOTRE_CLE_PUBLIQUE"); // Remplacez par votre clé publique EmailJS
+       })();
+    </script>
+</head>
+<body>
+    <div class="noise"></div>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">LOM GUINEE</a>
+            <div class="nav-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#produits">Produits</a>
+                <a href="#realisations">Réalisations</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h1>Expert en Confection de Tampons</h1>
+            <p>Créez vos tampons personnalisés avec la meilleure qualité et un service professionnel</p>
+            <a href="#contact" class="cta-button">Demander un Devis</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="services-container">
+            <div class="service-card" data-aos="fade-up">
+                <i class="fas fa-stamp service-icon"></i>
+                <h3>Tampons Administratifs</h3>
+                <p>Tampons officiels pour documents administratifs et professionnels</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-pencil-ruler service-icon"></i>
+                <h3>Design Personnalisé</h3>
+                <p>Création sur mesure selon vos spécifications exactes</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-truck service-icon"></i>
+                <h3>Livraison Rapide</h3>
+                <p>Service de livraison express disponible dans toute la Guinée</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ajout des sections supplémentaires... -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title" data-aos="fade-up">Contactez-nous</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Notre Adresse</h3>
+                        <p>Conakry, Guinée</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Téléphone</h3>
+                        <p>+224 629 93 99 09</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>LOMGUINEE@gmail.com</p>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nom Complet</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone">Téléphone</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="devis">Demande de devis</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="commande">Commande</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Envoyer</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
